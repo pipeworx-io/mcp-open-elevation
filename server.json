@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/open-elevation",
   "title": "Open Elevation",
   "description": "Open-Elevation MCP — terrain elevation by lat/lon (no auth)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/open-elevation",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-open-elevation",
