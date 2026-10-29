@@ -1,0 +1,39 @@
+[
+  {
+    "name": "get_elevation",
+    "description": "Elevation in metres above mean sea level for a single lat/lon.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number",
+          "description": "Latitude"
+        },
+        "longitude": {
+          "type": "number",
+          "description": "Longitude"
+        }
+      },
+      "required": [
+        "latitude",
+        "longitude"
+      ]
+    }
+  },
+  {
+    "name": "get_elevations",
+    "description": "Batch elevation lookup. Pass an array of {latitude, longitude} points (up to 1,000 per call recommended). Returns each with elevation in metres.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "locations": {
+          "type": "array",
+          "description": "Array of {latitude, longitude} objects"
+        }
+      },
+      "required": [
+        "locations"
+      ]
+    }
+  }
+]
